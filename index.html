@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Стресс опрос</title>
+    <style>
+        /* С сайта */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Manrope", sans-serif;
+            color: #485251;
+            line-height: 1.3;
+        }
+
+        .main {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 24px 56px;
+            min-height: 580px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="main">
+            <article class="menu-top">
+                <nav class="container">
+                    <a href="#survey">Принять участие в&nbsp;опросе</a>
+                    <a href="#stress">Узнать про стресс</a>
+                    <a href="#articles">Научные статьи</a>
+                </nav>
+            </article>
+            <div class="container100 heading">
+                <h1 class="docstress-h1">
+                    <div>Проект</div>Стресс менеджмент для&nbsp;врачей
+                </h1>
+                <p class="docstress-desc">Программа психобиотической поддержки врачей-неврологов</p>
+                <div id="survey"></div>
+            </div>
+            <div class="container">
+                <div class="docstress-flex">
+                    <div class="essence">
+                        <h2 class="docstress-h2">Суть программы</h2>
+                        <p class="docstress-p">С&nbsp;<b>3&nbsp;ноября</b> стартует проект <span><b>Стресс менеджмент
+                                    для врачей,</b></span> в&nbsp;рамках которого врачи-неврологи могут
+                            на&nbsp;собственном опыте убедиться в&nbsp;эффективности новых подходов к&nbsp;управлению
+                            стрессом. Программа предусматривает прием психобиотика* с&nbsp;последующей оценкой уровня
+                            выраженности стресса. Программа создана для врачей неврологов, как
+                            и&nbsp;большинство медицинских сотрудников, находящихся в&nbsp;условиях хронического стресса
+                            и&nbsp;способных профессионально оценить динамику его проявлений.</p>
+                        <p class="essence__note">*пробиотик, который может оказывать положительное влияние
+                            на&nbsp;когнитивные функции и&nbsp;снижать негативное влияние стресса на&nbsp;организм.
+                            Бифистим Антистресс (Lactobacillus plantarum DR7)
+                        </p>
+                    </div>
+                    <div class="essence-reg-wrapper">
+                        <div class="essence-reg">Перед регистрацией в&nbsp;программе необходимо пройти <span>тест
+                                на&nbsp;уровень стресса</span> (PSS-10)
+                            <a href="https://forms.yandex.ru/u/6902138d02848f53ec221c01/" target="_blank"
+                                class="essence-reg__button">Пройти опрос</a>
+                        </div>
+                        <div class="essence-reg-quantity">Количество участников<br>ограничено</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container100 survey">
+                <form class="survey-article" id="surveyForm" action="#">
+                    <h2 class="docstress-h2 myClass">Узнайте ваш уровень стресса</h2>
+                    <!-- Swiper -->
+                    <div class="swiper surveySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний месяц&nbsp;Вы испытывали
+                                    беспокойство из-за непредвиденных событий?</div>
+                                <label>
+                                    <input type="radio" name="question_1" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_1" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_1" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_1" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_1" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний месяц Вам казалось сложным
+                                    контролировать важные
+                                    события Вашей жизни?</div>
+                                <label>
+                                    <input type="radio" name="question_2" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_2" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_2" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_2" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_2" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний месяц&nbsp;Вы
+                                    испытывали нервное напряжение или
+                                    стресс?</div>
+                                <label>
+                                    <input type="radio" name="question_3" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_3" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_3" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_3" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_3" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний месяц&nbsp;Вы
+                                    чувствовали уверенность
+                                    в&nbsp;том,
+                                    что справитесь с&nbsp;решением ваших личных проблем?</div>
+                                <label>
+                                    <input type="radio" name="question_4" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_4" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_4" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_4" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_4" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний месяц&nbsp;Вы
+                                    чувствовали, что всё идёт так,
+                                    как&nbsp;Вы этого хотели?</div>
+                                <label>
+                                    <input type="radio" name="question_5" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_5" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_5" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_5" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_5" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний
+                                    месяц&nbsp;Вы думали, что не&nbsp;можете
+                                    справиться
+                                    с&nbsp;тем, что Вам нужно сделать?</div>
+                                <label>
+                                    <input type="radio" name="question_6" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_6" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_6" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_6" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_6" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний
+                                    месяц&nbsp;Вы были в&nbsp;состоянии справиться
+                                    с&nbsp;раздражительностью?</div>
+                                <label>
+                                    <input type="radio" name="question_7" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_7" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_7" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_7" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_7" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто за&nbsp;последний
+                                    месяц&nbsp;Вы чувствовали, что владеете
+                                    ситуацией?
+                                </div>
+                                <label>
+                                    <input type="radio" name="question_8" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_8" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_8" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_8" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_8" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто
+                                    за&nbsp;последний месяц&nbsp;Вы чувствовали
+                                    раздражение из-за
+                                    того,
+                                    что происходящие события выходили из-под Вашего
+                                    контроля?</div>
+                                <label>
+                                    <input type="radio" name="question_9" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_9" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_9" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_9" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_9" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="survey-title">Как часто
+                                    за&nbsp;последний месяц Вам казалось, что
+                                    накопившиеся труд&shy;ности
+                                    достигли такого предела, что&nbsp;Вы
+                                    не&nbsp;могли их&nbsp;контролировать?
+                                </div>
+                                <label>
+                                    <input type="radio" name="question_10" value="0">
+                                    Никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_10" value="1">
+                                    Почти никогда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_10" value="2">
+                                    Иногда
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_10" value="3">
+                                    Довольно часто
+                                    <span></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question_10" value="4">
+                                    Часто
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="survey-swiper-button-prev swiper-arrow"></div>
+                        <div class="survey-swiper-button-next swiper-arrow"></div>
+                        <div class="survey-swiper-button-next docstress-button">Следующий вопрос</div>
+                        <input type="submit" id="buttonResult" value="Узнать результат" class="docstress-button">
+                        <div class="survey-swiper-pagination"></div>
+
+                        <p class="survey-p" id="surveyLevel">У вас низкий уровень стресса</p>
+                        <a href="https://bifistim.com/" target="_blank" class="docstress-button"
+                            id="docstressButton">Подробнее про стресс</a>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="docstress-line" id="stress"></div>
+                <div class="docstress-flex">
+                    <div class="stress">
+                        <h2 class="docstress-h2">Про стресс врача</h2>
+                        <p class="docstress-p">Стресс врачей, особенно неврологов, вызван высокой эмоциональной
+                            нагрузкой,
+                            связанной с&nbsp;необхо&shy;димо&shy;стью принимать сложные решения и&nbsp;справляться
+                            с&nbsp;тяжелыми
+                            случаями. Неврологи часто сталкиваются с&nbsp;пациен&shy;тами, у&nbsp;которых
+                            диагности&shy;рованы
+                            серьезные заболевания, что требует от&nbsp;них не&nbsp;только профес&shy;сио&shy;нализма,
+                            но&nbsp;и&nbsp;значи&shy;тель&shy;ных эмоциональ&shy;ных ресурсов. Кроме того, нехватка
+                            времени
+                            на&nbsp;общение
+                            с&nbsp;пациен&shy;тами и&nbsp;адми&shy;нистра&shy;тивные нагрузки могут усугублять
+                            стрессовую ситуацию. Это
+                            подчеркивает важность поддержки и&nbsp;профи&shy;лак&shy;ти&shy;ческих мероприятий для
+                            сохранения
+                            психического
+                            здоровья медицинских работников.
+                            <br><br>Стресс менеджмент должен начинаться с&nbsp;решения врача подумать о&nbsp;себе
+                            и&nbsp;программа поможет это осуществить.
+                        </p>
+                        <div class="docstress-flex">
+                            <div class="stress-percent">На&nbsp;основании раз&shy;лич&shy;ных мета-анализах
+                                и&nbsp;между&shy;народ&shy;ных
+                                исследований мы&nbsp;знаем, что до&nbsp;70% медицинских работников страдают
+                                эмоциональным
+                                выгоранием</div>
+                            <div class="stress-percent">до&nbsp;35% страдают депрессией и&nbsp;ПТСР. Независимо
+                                от&nbsp;уровня развития системы здравоохранения, медработники везде находятся
+                                в&nbsp;группе
+                                высокого риска.</div>
+                        </div>
+                    </div>
+                    <img src="/upload/stress-opros/img/stress-img-doctor.jpg" alt="врач в стрессе" class="stress-img"
+                        loading="lazy" decoding="async">
+                </div>
+
+                <div class="docstress-line docstress-line--1"></div>
+
+                <h2 class="docstress-h2 docstress-h2--center">Почему у&nbsp;медиков такой высокий риск?<br>
+                    <span>Уникальные факторы стресса</span>
+                </h2>
+                <p class="docstress-desc">Сравнение становится понятным, если посмотреть на&nbsp;уникальные для
+                    здравоохранения триггеры:</p>
+                <section class="docstress-flex">
+                    <article class="why-card">
+                        <h3 class="why-card__h3">Постоянный контакт с&nbsp;человеческим страданием и&nbsp;смертью:</h3>
+                        <p class="why-card__p">Это основной источник вторичного травматического стресса и&nbsp;выгорания
+                            состраданием.</p>
+                    </article>
+                    <article class="why-card">
+                        <h3 class="why-card__h3">Высочайшая ответ&shy;ствен&shy;ность и&nbsp;цена ошибки:</h3>
+                        <p class="why-card__p">Решения врача напрямую влияют на&nbsp;жизнь и&nbsp;смерть. Этот уровень
+                            ответ&shy;ствен&shy;ности несопоставим с&nbsp;большинством других профессий.</p>
+                    </article>
+                    <article class="why-card">
+                        <h3 class="why-card__h3">Моральный дистресс (Moral Distress):</h3>
+                        <p class="why-card__p">Уникальный для медицины фактор. Это страдание,
+                            воз&shy;ни&shy;каю&shy;щее, когда мед&shy;работ&shy;ник знает правильное действие,
+                            но&nbsp;не&nbsp;может его выполнить из-за внешних огра&shy;ниче&shy;ний (например,
+                            отсутствие финан&shy;си&shy;ро&shy;ва&shy;ния, политика учреж&shy;де&shy;ния, мнение семьи
+                            пациента).</p>
+                    </article>
+                    <article class="why-card">
+                        <h3 class="why-card__h3">Хронический дефицит ресурсов:</h3>
+                        <p class="why-card__p">Работа в&nbsp;условиях нехватки времени, персонала, коек и&nbsp;лекарств
+                            создает перманентный фоновый стресс.</p>
+                    </article>
+                    <article class="why-card">
+                        <h3 class="why-card__h3">Административная и&nbsp;бюрократическая нагрузка:</h3>
+                        <p class="why-card__p">Огромный объем документации, которая отнимает время
+                            от&nbsp;непосредственной
+                            работы с&nbsp;пациентами.</p>
+                    </article>
+                </section>
+                <article class="why-conclusion"><span>Вывод:</span>Данные убедительно свидетельствуют, что медицинская
+                    профессия находится
+                    в&nbsp;группе крайне высокого риска по&nbsp;развитию психических расстройств, связанных
+                    со&nbsp;стрессом. Их&nbsp;показатели в&nbsp;2-5 раз превышают средние по&nbsp;популяции
+                    и&nbsp;значимо выше, чем у&nbsp;многих других стрессовых, но&nbsp;иных по&nbsp;своей природе
+                    профессий. Это подтверждает необходимость признать охрану психического здоровья медиков приоритетом
+                    для систем здравоохранения во&nbsp;всем мире.
+                </article>
+
+                <div class="docstress-line docstress-line--2"></div>
+
+                <h2 class="docstress-h2 docstress-h2--center">Микробиом оказывает влияние на&nbsp;многие органы
+                    и&nbsp;системы организма</h2>
+                <p class="docstress-desc">Взаимосвязь стресса с&nbsp;кишечными симптомами, как и&nbsp;влияние
+                    на&nbsp;все системы организма через микробиом подтверждена ведущими научными центрами мира</p>
+                <img src="/upload/stress-opros/img/microbiome-img.webp" alt="схема работы нашего микробиома"
+                    class="microbiome-img" loading="lazy" decoding="async">
+
+                <div class=" docstress-line docstress-line--3">
+                </div>
+
+                <div class="docstress-flex">
+                    <div class="axis-wrapper">
+                        <h2 class="docstress-h2">Патофизиология оси<br>стресс - микробиом - кишечник:</h2>
+                        <ul class="axis-ul">
+                            <li>Стресс активирует НРА-ось:
+                                <span>↑ кортизол, адреналин, провоспалительные цитокины.</span>
+                            </li>
+                            <li>Влияние на&nbsp;кишечник:
+                                <span>изменение моторики, барьерной функции и&nbsp;состава микробиоты.</span>
+                            </li>
+                            <li>Дисбиоз усиливает стресс-реактивность:
+                                <span>через метаболиты, иммунную активацию и&nbsp;нарушение синтеза
+                                    нейромедиаторов.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="axis-cont-book">
+                        <div class="axis-book">
+                            <h3 class="axis-book__title">В&nbsp;1853 году Сидней Уайтинг писал в&nbsp;своем произведении
+                                «Мемуары желудка»</h3>
+                            <p class="axis-book__p">
+                                «...И между мной и&nbsp;этим мистером Мозгом была проложена двойная сеть
+                                электрических проводов, с&nbsp;помощью которой я&nbsp;мог <br>
+                                с&nbsp;величайшей легкостью и&nbsp;быстротой сказать <br>
+                                ему все события дня по&nbsp;мере их&nbsp;поступления, <br>
+                                а&nbsp;так&nbsp;же он&nbsp;мог поделиться <br>
+                                со&nbsp;мной своими чувствами <br>
+                                и&nbsp;впечатлениями.»
+                            </p>
+                        </div>
+                        <img class="axis-book__img" src="/upload/stress-opros/img/axis-book.webp" alt="раскрытая книга"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+            <div class="container100 danilov">
+                <p class="danilov-p">«В&nbsp;рамках нашего уникального проекта поддержки здоровья врачей-неврологов
+                    мы&nbsp;не&nbsp;просто стремимся повысить Ваши профессиональные навыки, но&nbsp;и&nbsp;заботимся
+                    об&nbsp;эмоциональном благополучии. Программа „Стресс менеджмент для врачей“ предлагает участникам
+                    практические инструменты, основанные на&nbsp;мировом опыте, имеющие высокий уровень доказательности,
+                    которые помогут восстановить внутреннюю гармонию и&nbsp;научиться эффективно управлять стрессом. Это
+                    шаг к&nbsp;новому уровню жизни и&nbsp;работы, где здоровье и&nbsp;профессионализм идут рука
+                    об&nbsp;руку»
+                </p>
+                <figure class="danilov-speaker">
+                    <img class="danilov-speaker__img" src="/upload/stress-opros/img/danilov.png"
+                        alt="Данилов Алексей Борисович" decoding="async">
+                    <figcaption class="danilov-speaker__title">
+                        <div>Данилов Алексей Борисович</div>
+                        Кафедра нервных болезней<br>Институт Профессионального Образования<br>Сеченовский Университет
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="container">
+                <iframe class="video-wrapper" title="vimeo-player" src="https://player.vimeo.com/video/1132749954"
+                    width="1269" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="container100 bifistim">
+                <div class="bifistim-wrapper">
+                    <h2 class="docstress-h2 docstress-h2__bifistim">«Бифистим® <span>Антистресс</span>»</h2>
+                    <ul class="bifistim-ul">
+                        <li>Современный моноштаммовый психобиотик с&nbsp;доказательной базой и&nbsp;широким спектром
+                            применения
+                        <li>В&nbsp;составе Lactobacillus plantarum DR7, магний и&nbsp;В6
+                        <li>Применяется у&nbsp;людей с&nbsp;хроническим стрессом, например у&nbsp;лиц с&nbsp;выраженной
+                            тревогой, с&nbsp;функциональными нарушениями ЖКТ на&nbsp;фоне стресса, с&nbsp;другими
+                            стресс-ассоциированными состояниями и&nbsp;с&nbsp;различными когнитивными нарушениями
+                        <li>Lactobacillus plantarum DR7 доказано* снижает уровень тревоги, стресса, изменяет уровни
+                            кортизола и&nbsp;цитокинов в&nbsp;плазме крови, способствует улучшению когнитивных функций
+                            и&nbsp;памяти, нормализует перистальтику кишечника, снижает показателей усталости
+                            и&nbsp;спутанности сознания.</li>
+                    </ul>
+                    <p class="bifistim-note">
+                        *подробнее об&nbsp;исследованиях&nbsp;см.&nbsp;в&nbsp;разделе
+                        <a href="#articles">«СТАТЬИ»</a>
+                    </p>
+                    <img src="/upload/stress-opros/img/box_packaging_antistress.webp
+" alt="Упаковка препарата Бифистим" class="bifistim-img" loading="lazy" decoding="async">
+                    <div class="docstress-flex">
+                        <a href="https://research.idm.institute/upload/stress-opros/docs/certificate_of_state_registration_of_products.pdf"
+                            class="bifistim-link" target="_blank">Свидетельство о&nbsp;государственной регистрации</a>
+                        <a href="/upload/stress-opros/docs/certificate_of_conformity.pdf" class="bifistim-link"
+                            target="_blank">Сертификат соответствия</a>
+                        <a href="/upload/stress-opros/docs/psychobiotics_stress_management.pdf" class="bifistim-link"
+                            target="_blank">Возможности применения психобиотиков в&nbsp;управлении
+                            стрессом</a>
+                    </div>
+                    <a href="#survey" class="docstress-button">Пройти опрос про стресс</a>
+                </div>
+            </div>
+
+            <div class="container articles">
+                <div class="docstress-line docstress-line--articles" id="articles"></div>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+                <!-- Swiper -->
+                <div class="swiper articlesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h3>Lactobacillus plantarum DR7 Modulated Bowel
+                                Movement and Gut Microbiota Associated with
+                                Dopamine and Serotonin Pathways in Stressed Adults</h3>
+                            <p>We have previously reported that the administration of Lactobacillus plantarum DR7 for
+                                12 weeks reduced stress and anxiety in stressed adults as compared to the placebo group,
+                                in association
+                                with changes along the brain neurotransmitters pathways of serotonin and
+                                dopamine-norepinephrine.</p>
+                            <a href="/upload/stress-opros/docs/Liu_2020_Lp_DR7_modulated_bowel_movement_and_gut_microbiota_in_stressed.pdf"
+                                target="_blank">Скачать</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>The Microbiome-Gut-Brain Axis and Resilience to Developing
+                                Anxiety or Depression under Stress
+                            </h3>
+                            <p>Episodes of depression and anxiety commonly follow the experience of stress, however not
+                                everyone who experiences stress develops a mood disorder. Individuals who are able to
+                                experience
+                                stress without a negative emotional effect are considered stress resilient.
+                                Stress-resilience (and its
+                                counterpart stress-susceptibility) are influenced by several psychological and
+                                biological factors,
+                                including the microbiome-gut-brain axis.
+                            </p>
+                            <a href="/upload/stress-opros/docs/microorganisms-09-00723.pdf" target="_blank">Скачать</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>Lactobacillus plantarum DR7 alleviates stress and anxiety in adults: a randomised,
+                                double-blind, placebo-controlled study
+                            </h3>
+                            <p>Probiotics have been reported to exert beneficial effects along the gut-brain axis. This
+                                randomised, double-blind
+                                and placebo-controlled human study aimed to evaluate such properties of Lactobacillus
+                                plantarum DR7 and its
+                                accompanying mechanisms in stressed adults.
+                            </p>
+                            <a href="/upload/stress-opros/docs/Chong_2019_Lactobacillus_plantarum_DR7_alleviates_stress_and_anxiety.pdf"
+                                target="_blank">Скачать</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>Strain-Specific Therapeutic Potential of Lactiplantibacillus
+                                plantarum: A Systematic Scoping Review
+                            </h3>
+                            <p>Objectives: This systematically scoping review aims to evaluate the therapeutic
+                                potential and clinical benefits of specific Lactiplantibacillus plantarum (L. plantarum)
+                                strains
+                                in human health, identifying their strain-specific effects across various medical
+                                conditions.
+                                Methods: Following the PRISMA for Scoping Reviews (PRISMA-ScR) guidelines and
+                                employing the PICO framework
+                            </p>
+                            <a href="/upload/stress-opros/docs/nutrients-17-01165-v2.pdf" target="_blank">Скачать</a>
+                        </div>
+                    </div>
+                    <div class="articlesSwiper-nav">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            <div class="container100 footer">
+                <div class="footer-container">
+                    <img src="/upload/stress-opros/img/footer-logo.svg" alt="Логотип Бифистим" class="footer__logo"
+                        loading="lazy" decoding="async">
+                    <a href="/obrabotki-personalnyh-dannyh/" class="footer__link">Использование файлов cookies</a>
+                    <a href="/obrabotki-personalnyh-dannyh/" class="footer__link">Политика об&nbsp;обработке
+                        персональных данных</a>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                window.addEventListener("DOMContentLoaded", () => {
+
+                    // Получаем ответы из формы и считаем их
+                    const surveyForm = document.getElementById('surveyForm');
+
+                    if (!surveyForm) return;
+                    surveyForm.addEventListener('submit', handleFormSubmit);
+
+                    function handleFormSubmit(event) {
+                        event.preventDefault();
+                        formValueCounter(surveyForm);
+                    }
+
+                    function formValueCounter(formNode) {
+                        const { elements } = formNode
+                        let resultForm = 0;
+                        const data = Array.from(elements).filter((item) => !!item.name).map((element) => {
+                            const { value, checked } = element
+                            if (checked) resultForm += Number(element.value);
+                        })
+                        outputResultButton(resultForm)
+                    }
+
+                    // Выдаём по результатам надпись и кнопку
+                    function outputResultButton(rez) {
+                        let pointValue = 'низкий';
+                        let surveyLevel = document.querySelector('#surveyLevel');
+                        let docstressButton = document.querySelector('#docstressButton');
+                        let buttonResult = document.querySelector('#buttonResult');
+                        let buttonNext = document.querySelector('.docstress-button.survey-swiper-button-next')
+                        if (!buttonResult || !buttonNext) return;
+
+                        if (!surveyLevel || !docstressButton) {
+                            alert('Ошибка формы, перезагрузите пожалуйста страницу');
+                            return;
+                        }
+
+                        if (rez > 13) {
+                            pointValue = 'средний';
+                            if (rez > 23) {
+                                pointValue = 'высокий';
+                            }
+                            surveyLevel.textContent = 'У вас ' + pointValue + ' уровень стресса';
+                            docstressButton.textContent = 'Поддержать здоровье';
+                            docstressButton.setAttribute('href', '/auth/?backurl=/lp/stress-opros/?r=yes');
+                            docstressButton.setAttribute('target', '_self');
+                        }
+                        buttonNext.style.display = 'none';
+                        buttonResult.style.display = 'none';
+                        surveyLevel.style.display = 'block';
+                        docstressButton.style.display = 'block';
+                    }
+
+                    // Initialize Swiper
+                    var swiperSurvey = new Swiper(".surveySwiper", {
+                        effect: "cards",
+                        navigation: {
+                            nextEl: ".survey-swiper-button-next",
+                            prevEl: ".survey-swiper-button-prev",
+                        },
+                        pagination: {
+                            el: ".survey-swiper-pagination",
+                            type: "progressbar",
+                        }
+                    });
+                    var swiper = new Swiper(".articlesSwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 16,
+                        loop: true,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            561: {
+                                slidesPerView: 2,
+                            },
+                            1025: {
+                                slidesPerView: 2,
+                                spaceBetween: 24,
+                            }
+                        }
+                    });
+                });
+            </script>
+        </section>
+    </main>
+</body>
+</html>
