@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Noto Sans";
+    src: url("Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rothek Bold";
+    src: url("Rothek/Groteskly_Yours-Rothek_Bold.otf") format("truetype");
+}
